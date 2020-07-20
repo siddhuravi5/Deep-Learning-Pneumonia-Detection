@@ -65,3 +65,45 @@ model-3
 
 	test loss : 0.3062
 	test accuracy : 0.9087
+
+model-4 
+	
+	Increased validation set size
+	added more conv,pooling and fully connected layers
+	added more dropout layers with rate=0.5 
+	
+	A Sequential Keras Moidel
+	Conv layer
+	Pooling Layer
+	Conv layer
+	Pooling Layer
+	Conv layer
+	Pooling Layer
+	Flatten
+	Dropout 0.5
+	Dense Layer 128
+	Dropout 0.5
+	Dense Layer 64
+	Dropout 0.5
+	Dense Layer 32
+	Dropout 0.5
+	Dense 1 sigmoid
+
+	Adam optimizer
+	binary crossentropy loss function
+
+	Image Augmentaion done using tf.keras.preprocessing.image.ImageDataGenerator 
+	with rescale=1.0/255,shear_range=0.2,zoom_range=0.2 and horizontal_flip=True 
+	as parameters
+
+	45 epochs
+	batch-size : 32
+	img size 32 * 32
+
+	training loss : 0.092
+	training accuracy : 0.96
+
+	test loss : 0.2512
+	test accuracy : 0.9433
+
+	
