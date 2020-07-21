@@ -106,4 +106,21 @@ model-4
 	test loss : 0.2512
 	test accuracy : 0.9433
 
+model-5: Transfer Learning
+	Sequence model of :
+		VGG16 (top layer is popped, and freezed the weights)
+		Dropout(0.25)
+		Dense 128 Relu
+		Dropout(0.25)
+		Dense 1 Sigmoid
+
+	50 epochs
+	(128,128,3) image sizes
+	batch-size : 64
+
+	training loss : 0.1604
+	training accuracy : 0.9382
+
+	test loss : 0.2544
+	test accuracy : 0.9188
 	
