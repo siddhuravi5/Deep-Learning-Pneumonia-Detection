@@ -123,4 +123,23 @@ model-5: Transfer Learning
 
 	test loss : 0.2544
 	test accuracy : 0.9188
+
+model-6 : transfer learning 2
+	Sequence model of:
+	VGG16- 	pretrained weights for first 14 layers and then random
+		weights for remaing 6 layers,
+		all the layers are trainable
+	Dropout(0.3)
+	Dense 1 Sigmoid
+
+	100 epochs
+	(128,128,3) image sizes
+	batch-size : 64
+
+	training loss : 0.0371
+	training accuracy : 0.9876
+
+	test loss : 0.2559
+	test accuracy : 0.9400
+
 	
